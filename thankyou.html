@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Thank You!</h1>
+    </header>
+
+    <div class="container">
+      <h2>Your form has been submitted successfully!</h2>
+      <h3>Submitted Details:</h3>
+      <ul id="detailsList"></ul>
+      <a href="forms.html"><button>Go Back</button></a>
+    </div>
+
+    <script>
+      const data = JSON.parse(localStorage.getItem("formData"));
+      const detailsList = document.getElementById("detailsList");
+
+      if (data) {
+        detailsList.innerHTML = `
+        <b>Name:</b> ${data.name}<br>
+        <b>Age:</b> ${data.age}<br>
+        <b>Gender:</b> ${data.gender}<br>
+        <b>Email:</b> ${data.email}<br>
+        <b>Course:</b> ${data.course}<br>
+        <b>Resume:</b> ${data.resume}<br>
+        <b>Phone:</b> ${data.phone}<br>
+        <b>Address:</b> ${data.address}<br>
+        <b>LinkedIn:</b> <a href="${data.linkedin}" target="_blank">${data.linkedin}</a><br>
+        <b>GitHub:</b> <a href="${data.github}" target="_blank">${data.github}</a>
+      `;
+      }
+    </script>
+  </body>
+</html>

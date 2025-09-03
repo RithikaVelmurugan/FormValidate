@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("download (1).jpeg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+/* Fixed Title */
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/* Form Container */
+.container {
+  width: 60%;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 40px;
+  margin-top: 100px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  text-align: center;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table Cells - Improved Visibility */
+td {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95); /* Brighter text */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Input Fields */
+input,
+select,
+textarea {
+  padding: 12px;
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Stronger border contrast */
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000; /* Darker text for better contrast */
+  backdrop-filter: blur(15px);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Placeholder Text */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(0, 0, 0, 0.6); /* More visible placeholder */
+}
+
+/* Focus Effect */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #ff002b;
+  box-shadow: 0 0 15px rgba(255, 0, 25, 0.8);
+}
+
+/* Dropdown Styling */
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 48%;
+  margin: 10px 1%;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background: #28a745;
+  color: rgb(249, 245, 23);
+  box-shadow: 0px 0px 15px rgba(209, 228, 35, 0.9);
+}
+
+input[type="reset"]:hover {
+  background: #dc3545;
+  color: white;
+  box-shadow: 0px 0px 15px rgba(220, 53, 69, 0.9);
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Form Validation</h1>
+    </header>
+
+    <div class="container">
+      <form id="myForm">
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td>
+              <input type="text" id="name" placeholder="Enter your name" />
+            </td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td>
+              <input type="number" id="age" placeholder="Enter your age" />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" name="gender" value="Male" /> Male
+              <input type="radio" name="gender" value="Female" /> Female
+            </td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <input type="email" id="email" placeholder="Enter your Mail ID" />
+            </td>
+          </tr>
+          <tr>
+            <td>Select a Course:</td>
+            <td>
+              <select id="course">
+                <option value="">Select a Course</option>
+                <option>Full Stack Development</option>
+                <option>DevOps</option>
+                <option>Cloud Computing</option>
+                <option>Cyber Security</option>
+                <option>AI & ML</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Upload your resume:</td>
+            <td><input type="file" id="resume" /></td>
+          </tr>
+          <tr>
+            <td>Phone Number:</td>
+            <td>
+              <input
+                type="text"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td>
+              <textarea
+                id="address"
+                placeholder="Enter your address"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>LinkedIn Profile:</td>
+            <td>
+              <input
+                type="url"
+                id="linkedin"
+                placeholder="Enter your LinkedIn URL"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>GitHub Profile:</td>
+            <td>
+              <input
+                type="url"
+                id="github"
+                placeholder="Enter your GitHub URL"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+            <td><input type="submit" value="Submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <!-- Include script.js file here -->
+    <script src="forms.js"></script>
+  </body>
+</html>
